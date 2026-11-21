@@ -10,6 +10,11 @@ li {
   border-radius: 8px;
 }
 
+.date {
+  color: gray;
+  font-size: 14px;
+}
+
 .empty {
   color: gray;
   font-style: italic;
