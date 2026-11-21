@@ -1,0 +1,17 @@
+header {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #4f46e5;
+  color: white;
+}
+
+button {
+  margin-right: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
