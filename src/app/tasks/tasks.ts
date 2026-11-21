@@ -1,10 +1,11 @@
 import { DatePipe, UpperCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 import { Task } from '../models/task.model';
+import { OverduePipe } from '../pipes/overdue-pipe';
 
 @Component({
   selector: 'app-tasks',
-  imports: [DatePipe, UpperCasePipe],
+  imports: [DatePipe, UpperCasePipe, OverduePipe],
   templateUrl: './tasks.html',
   styleUrl: './tasks.css',
 })

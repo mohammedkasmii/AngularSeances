@@ -6,6 +6,7 @@
       <li>
         <strong>{{ task.title | uppercase }}</strong>
         <span class="date">— pour le {{ task.dueDate | date: 'dd/MM/yyyy' }}</span>
+        <span class="overdue">{{ task.dueDate | overdue }}</span>
       </li>
     }
   </ul>
