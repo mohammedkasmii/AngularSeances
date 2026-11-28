@@ -1,0 +1,10 @@
+article {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+h3,
+p {
+  margin: 0 0 8px;
+}

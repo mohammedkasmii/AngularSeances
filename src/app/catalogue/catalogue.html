@@ -1,0 +1,20 @@
+<h2>Catalogue</h2>
+<div class="produits">
+  @for (produit of produits; track produit.id) {
+    <app-produit [produit]="produit" (ajouter)="ajouterAuPanier($event)" />
+  }
+</div>
+
+<div class="panier">
+  <h2>Panier ({{ panier.count() }})</h2>
+  @if (panier.items().length === 0) {
+    <p>Votre panier est vide.</p>
+  } @else {
+    <ul>
+      @for (produit of panier.items(); track $index) {
+        <li>{{ produit.nom }} - {{ produit.prix }} DH</li>
+      }
+    </ul>
+    <p>Total : {{ panier.total() }} DH</p>
+  }
+</div>

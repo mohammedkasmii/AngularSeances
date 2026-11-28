@@ -18,7 +18,6 @@ export class Tasks {
   count = computed(() => this.tasks().length);
 
   add(task: Task) {
-    // On crée un nouveau tableau : jamais tasks().push(task)
     this.tasks.update(items => [...items, task]);
   }
 

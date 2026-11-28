@@ -1,0 +1,8 @@
+.produits {
+  display: grid;
+  gap: 12px;
+}
+
+.panier {
+  margin-top: 24px;
+}

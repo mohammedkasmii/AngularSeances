@@ -4,3 +4,8 @@ main {
   padding: 24px;
   font-family: Arial, sans-serif;
 }
+
+app-catalogue {
+  display: block;
+  margin-top: 40px;
+}
